@@ -41,7 +41,7 @@ services:
   debug:
     build:
       context: .
-      dockerfile: Dockerfile.debug
+      dockerfile: Dockerfile.vsdebug
     volumes:
       - .:/app
       - /app/obj
