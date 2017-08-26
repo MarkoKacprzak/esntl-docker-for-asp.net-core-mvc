@@ -15,7 +15,7 @@ services:
     networks:
       - backend
     environment: 
-      - MYSQL_ROOT_PASSWORD=mysecret
+      - MYSQL_ROOT_PASSWORD=SecretComplex1!
       - bind-address=0.0.0.0
     deploy:
         replicas: 1

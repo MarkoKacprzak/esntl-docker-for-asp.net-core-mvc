@@ -17,7 +17,7 @@ namespace ExampleApp.Models {
 
             var host = envs["DBHOST"] ?? "localhost";
             var port = envs["DBPORT"] ?? "3306";
-            var password = envs["DBPASSWORD"] ?? "mysecret";
+            var password = envs["DBPASSWORD"] ?? "SecretComplex1!";
 
             options.UseMySql($"server={host};userid=root;pwd={password};"
                     + $"port={port};database=products");

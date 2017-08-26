@@ -22,7 +22,7 @@ namespace ExampleApp {
 
             var host = Configuration["DBHOST"] ?? "localhost";
             var port = Configuration["DBPORT"] ?? "3306";
-            var password = Configuration["DBPASSWORD"] ?? "mysecret";
+            var password = Configuration["DBPASSWORD"] ?? "SecretComplex1!";
             System.Console.WriteLine($"Preparing Database {host}:{password}");
                 
             services.AddDbContext<ProductDbContext>(options =>
