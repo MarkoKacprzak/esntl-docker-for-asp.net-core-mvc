@@ -23,7 +23,8 @@ namespace ExampleApp {
             var host = Configuration["DBHOST"] ?? "localhost";
             var port = Configuration["DBPORT"] ?? "3306";
             var password = Configuration["DBPASSWORD"] ?? "mysecret";
-
+            System.Console.WriteLine($"Preparing Database {host}:{password}");
+                
             services.AddDbContext<ProductDbContext>(options =>
                 options.UseMySql($"server={host};userid=root;pwd={password};"
                     + $"port={port};database=products"));

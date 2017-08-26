@@ -22,6 +22,7 @@
 [Rr]elease/
 [Rr]eleases/
 [Dd]ist/
+lib/
 x64/
 x86/
 bld/

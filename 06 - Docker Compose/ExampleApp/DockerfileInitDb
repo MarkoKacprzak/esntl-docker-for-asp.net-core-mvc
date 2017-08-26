@@ -10,7 +10,7 @@ WORKDIR /app
 
 EXPOSE 80/tcp
 
-ENV WAITHOST=mysql WAITPORT=3306
+ENV WAITHOST=mysql WAITPORT=3306 DBHOST=mysql INITDB=true
 
 ENTRYPOINT ./wait-for-it.sh $WAITHOST:$WAITPORT --timeout=0 \
-    && exec dotnet ExampleApp.dll
+    && exec dotnet ExampleApp.dll 
