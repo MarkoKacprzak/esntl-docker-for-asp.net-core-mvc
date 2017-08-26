@@ -4,7 +4,7 @@ COPY node_modules/wait-for-it.sh/bin/wait-for-it /tools/wait-for-it.sh
 
 RUN chmod +x /tools/wait-for-it.sh
 
-ENV DBHOST=dev_mysql WAITHOST=dev_mysql WAITPORT=3306
+ENV DBHOST=mysql WAITHOST=mysql WAITPORT=3306
 
 ENV DOTNET_USE_POLLING_FILE_WATCHER=true 
 
